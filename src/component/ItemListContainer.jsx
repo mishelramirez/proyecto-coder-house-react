@@ -1,11 +1,23 @@
-/*import React from 'react'
-import Container from '@mui/material/Container'
-import './itemList.css'
+import React from "react";
 
-export default function ItemListContainer({color, saludo}){    
-    return(
-        <Container fixed>
-        <h2 className="itemList" style={{backgroundColor:color}}>{saludo}</h2>
-        </Container>
-    )
-}*/
+export default function ItemListContainer({ prop }) {
+  //* Saco la prop
+  return (
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        width: "100%",
+        height: "100%",
+      }}
+    >
+      <h2 className="itemList" style={{ backgroundColor: "white" }}>
+        {prop}
+        {
+          //* Uso la prop
+        }
+      </h2>
+    </div>
+  );
+}
